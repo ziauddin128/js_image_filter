@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+.main
+{
+    width: 100%;
+    background-color: rgba(135, 207, 235, 0.452);
+}
+.page1
+{
+    min-height: 100vh;
+    padding: 60px;
+}
+.page1 > h1 
+{
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.filter_button
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.filter_button button
+{
+    padding: 10px 20px;
+    border: none;
+    background-color: white;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.filter_button button.active 
+{
+    background-color: royalblue;
+    color: white;
+}
+.filter_cards
+{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.filter_cards .card 
+{
+    width: 320px;
+    background-color: white;
+    padding: 3px;
+    border-radius: 10px;
+}
+.filter_cards .card img 
+{
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 10px 10px 0px 0px;
+}
+.filter_cards .card .card_desc
+{
+    padding: 10px;
+}
+.filter_cards .card .card_desc h1 
+{
+    font-size: 20px;
+    font-weight: 600;
+    margin: 5px 0;
+}
+.filter_cards .card .card_desc p 
+{
+    margin: 2px 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+@media(max-width:991px)
+{
+    .filter_button button,.filter_cards .card 
+    {
+        flex-grow: 1;
+    }
+}
